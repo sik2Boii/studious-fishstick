@@ -12,3 +12,20 @@ nc localhost 9999
 [gemini] 응답 생성 중...
 안녕하세요! 😊 무엇을 도와드릴까요?
 ```
+
+## Claude 소켓 채팅 동작 확인
+
+![Claude 채팅 결과](images/claude_chat.jpeg)
+
+```
+nc localhost 9999
+연결 성공! 현재 엔진: gemini
+명령어: SWITCH:gemini | SWITCH:claude | quit
+SWITCH:claude
+[서버] 엔진 전환 완료: claude
+안녕하세요
+[claude] 응답 생성 중...
+안녕하세요! 👋
+
+무엇을 도와드릴까요?
+```
