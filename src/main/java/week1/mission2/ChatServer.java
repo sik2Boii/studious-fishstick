@@ -34,7 +34,7 @@ public class ChatServer {
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true)
         ) {
             out.println("연결 성공! 현재 엔진: " + engine.getEngineName());
-            out.println("명령어: SWITCH:gemini | quit");
+            out.println("명령어: SWITCH:gemini | SWITCH:claude | quit");
 
             String message;
             while ((message = in.readLine()) != null) {

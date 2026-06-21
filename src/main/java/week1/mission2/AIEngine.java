@@ -11,7 +11,7 @@ public interface AIEngine {
     String chat(String message);
 
     /**
-     * @return 엔진 이름 (예: "gemini", "openai")
+     * @return 엔진 이름 (예: "gemini", "claude")
      */
     String getEngineName();
 }
