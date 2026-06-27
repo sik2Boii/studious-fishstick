@@ -16,7 +16,7 @@ public class GeminiEngine implements AIEngine {
 
     private static final String GEMINI_URL =
             "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=";
-    private static final Pattern RESPONSE_PATTERN = Pattern.compile("\"text\"\\s*:\\s*\"((?:[^\"\\\\]|\\\\.)*)\"");
+    private static final Pattern RESPONSE_PATTERN = Pattern.compile("\"text\"\\s*:\\s*\"((?:[^\"\\\\]|\\\\.)*+)\"");
 
     private final HttpClient httpClient;
     private final String apiKey;

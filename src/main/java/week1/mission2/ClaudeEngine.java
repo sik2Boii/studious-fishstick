@@ -16,7 +16,7 @@ public class ClaudeEngine implements AIEngine {
 
     private static final String CLAUDE_URL = "https://api.anthropic.com/v1/messages";
     private static final String MODEL = "claude-haiku-4-5-20251001";
-    private static final Pattern RESPONSE_PATTERN = Pattern.compile("\"text\"\\s*:\\s*\"((?:[^\"\\\\]|\\\\.)*)\"");
+    private static final Pattern RESPONSE_PATTERN = Pattern.compile("\"text\"\\s*:\\s*\"((?:[^\"\\\\]|\\\\.)*+)\"");
 
     private final HttpClient httpClient;
     private final String apiKey;
